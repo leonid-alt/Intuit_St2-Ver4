@@ -44,8 +44,10 @@
         NSLog(@"%@", str);
     }
     
-    
+    // Выделение памяти (alloc) и инициализация (init)  класса User
     User *u = [[User alloc] init];
+    
+    // Вывод в консоль user: <User: 0x7a74bef0>
     NSLog(@"user: %@", u);
     
     // Override point for customization after application launch.
