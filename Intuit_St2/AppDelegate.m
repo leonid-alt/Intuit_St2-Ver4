@@ -18,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    
+    
+    
+    // Строки
+    
     NSString *a = @"abc";
     NSString *b = [a stringByReplacingOccurrencesOfString:@"a"
                                                withString:@"b"];
@@ -43,6 +48,18 @@
     {
         NSLog(@"%@", str);
     }
+    
+    
+    // Создание словаря объектов по "ключь : значение"
+    // и вывод на печать:  key2 - b
+    //                     key1 - a
+    NSDictionary *dict = @{ @"key1" : @"a", @"key2" : @"b" };
+    for (NSString *key in dict)
+    {
+        NSString *value = dict[key];
+        NSLog(@"%@ - %@", key, value);
+    }
+    
     
     // Выделение памяти (alloc) и инициализация (init)  класса User
     User *u = [[User alloc] init];
