@@ -51,8 +51,7 @@
     
     
     // Создание словаря объектов по "ключь : значение"
-    // и вывод на печать:  key2 - b
-    //                     key1 - a
+    // и вывод на печать:  key2 - b,  key1 - a
     NSDictionary *dict = @{ @"key1" : @"a", @"key2" : @"b" };
     for (NSString *key in dict)
     {
